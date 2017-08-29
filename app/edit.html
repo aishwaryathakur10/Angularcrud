@@ -1,0 +1,67 @@
+<div class="container" ng-controller="editController">
+            <form class="form-horizontal" role="form">
+                <h2>Edit this record</h2>
+                <div class="form-group">
+                    <label for="bookTitle" class="col-sm-3 control-label">Book Title</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="bookTitle" placeholder="Title" class="form-control" ng-model="btitle" autofocus>
+                        
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="year" class="col-sm-3 control-label" >Year</label>
+                    <div class="col-sm-9">
+                        <!--<input type="date" id="year" class="form-control">-->
+                       
+                    <input type="number" data-ng-model="byear"  id="year" class="form-control" />
+                    </div>
+                </div>
+               
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Favorite</label>
+                    <div class="col-sm-9">
+                     
+                          
+                                <!--<label class="radio-inline">
+                                    <input type="radio" id="yesRadio" value="true">Yes
+                                </label>
+                            </div>
+                            <div class="col-sm-4">
+                                <label class="radio-inline">
+                                    <input type="radio" id="NoRadio" value="false">No
+                                </label>-->
+
+                                <input type="text" id="efav" ng-model="bfav">
+
+
+                            
+                        </div>
+                 
+                </div>  
+                
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="submit" class="btn btn-primary btn-block" data-ng-click="save()">Save</button>
+                    </div>
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->
+
+        <style>body {
+    background-color: #eee;
+}
+
+*[role="form"] {
+    max-width: 530px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.3em;
+}
+
+*[role="form"] h2 {
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+</style>

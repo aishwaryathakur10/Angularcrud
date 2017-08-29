@@ -1,0 +1,73 @@
+<div data-ng-app="app" data-ng-controller="createController" align="center">
+<h1>Book Information</h1>
+    <form name="myForm">
+      
+             <tr>
+                   
+                <td>
+                    Book ID</td>
+                    <br>
+                <td>
+                    <input type="number" data-ng-model="bk.id" ng-disabled="true"></td>
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <td>
+                    Title </td> 
+                    <br>
+                <td>
+                    <input type="text" data-ng-model="bk.title"  placeholder="Enter title" required /></td>
+            </tr>
+            <br>
+          <br>
+            <tr>
+            
+                <td>
+            Year </td>
+            <br>
+                <td>
+                    <input type="number" data-ng-model="bk.year" placeholder="Enter year of publish"/></td>
+            </tr>
+            <br>
+            <br>
+            <tr>
+               <td>
+                   
+                  
+                <div class="form-group">
+                   Favorite
+                   <br>
+             <input type="text" id="fav"  data-ng-model="bk.favorite" placeholder="Enter true or false"> 
+<!--                     
+                                    <input type="radio" id="yesRadio" value="true">Yes
+                            
+                          
+                                    <input type="radio" id="NoRadio" value="false">No
+                              
+                        
+                            
+                       -->
+             
+                </div> <!-- /.form-group -->
+                
+        
+                </td>
+                </tr>
+                <br>
+                <br>
+                <tr>
+                <td>
+                    <input type="submit" value="Save" data-ng-click="add(bk)" />
+                    &nbsp;
+                    &nbsp;
+                  
+                    <input type="reset" value="Clear"/>
+                </td>
+
+                 
+
+            </tr>
+       
+    </form>   
+</div>

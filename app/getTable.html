@@ -1,0 +1,28 @@
+
+<div class="container" ng-controller="getTableController">
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Book Id</th>
+      <th>Book Title</th>
+      <th>Year</th>
+      <th>Favorite</th>
+      <th>View</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="bk in bookArray">
+      <th scope="row">{{bk.id}}</th>
+      <td>{{bk.title}}</td>
+      <td>{{bk.year}}</td>
+      <td>{{bk.favorite}}</td>
+      <th><a  href="#viewBook">View</a></th>
+      <th><a  href="#editbook/{{bk.id}}">Edit</a></th>
+      <th><a  href="#deleteBook" data-ng-click="deleterecord(bk.id)">Delete</a></th>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
